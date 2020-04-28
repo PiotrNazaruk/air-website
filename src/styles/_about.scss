@@ -1,0 +1,193 @@
+.about{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @include small-phone{
+        height: 70vh;
+    }
+    @include phone-landscape{
+        height: 70vh;
+    }
+    @include tablet{
+        height: 40vh;
+    }
+    @include desktop{
+        height: 100vh;
+        margin-top: 10vh;
+    }
+    @include desktop-1440{
+        height: 40vh;
+    }
+    &__container{
+        height: 90%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include desktop{
+            justify-content: space-between;
+            align-items: center; 
+            flex-direction: row;
+            width: 90%;
+        }
+        
+    }
+}
+.about__photos{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 2rem
+}
+.about__photos-box1{
+    grid-column: span 6;
+    grid-row:  span 4;
+    background: $darkorange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        margin-left: 2rem;
+        color: $dark-blue;
+    }
+    p{
+        margin-left: 3rem;
+        font-size: 1.3rem;
+        opacity: .6;
+    }
+}
+.about__photos-box2{
+    grid-column: span 6;
+    grid-row: span 7;
+    background-image: url('../../public/pictures/toshiba1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &::after{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #003354;
+        top: 0;
+        left: 0;
+        z-index: 555;
+        content: '';
+        opacity: .6;
+    }
+    
+}
+.about__photos-box3{
+    grid-column: span 6;
+    grid-row: span 8;
+    background-image: url('../../public/pictures/toshiba2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &::after{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #003354;
+        top: 0;
+        left: 0;
+        z-index: 555;
+        content: '';
+        opacity: .6;
+    }
+
+}
+.about__photos-box4{
+    grid-column: span 6;
+    grid-row: span 5;
+    background: $darkorange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+
+        margin-left: 2rem;
+        color: $dark-blue;
+    }
+    p{
+        margin-left: 3rem;
+        font-size: 1.3rem;
+        opacity: .6;
+    }
+}
+.about__content{
+    width: 40%;
+    height: 100%;
+    .about__content-container{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        h3{
+            position: relative;
+            color: $dark-blue;
+            font-size: 2rem;
+            &:after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: .1rem;
+                background: black;
+                bottom: -2rem;
+                left: 0;
+            }
+        }
+        p{
+            padding-top: 4rem;
+            font-size: 2rem;
+            display: block;
+            width: 100%;
+            opacity: .6;
+            font-family: 'Merriweather', serif;
+        }
+        h4{
+            margin-top: 4rem;
+           
+        }
+    }
+}
+
+.about__content-btn {
+    // background: $yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: .1rem solid $dark-blue !important;
+    color: #fff;
+    height: 5rem;
+    width: 17rem;
+    font-size: 1.2rem;
+    background: {
+      image: linear-gradient(45deg,$dark-blue 50%, transparent 50%);
+      position: 100%;
+      size: 400%;
+    }
+    transition: background 500ms ease-in-out;
+    
+    &:hover {
+      background-position: 0;
+      span{
+          color: white;
+      }
+    }
+   
+  }
+  
+.about__content-text{
+    h4{
+    
+    }
+}

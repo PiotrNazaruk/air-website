@@ -1,0 +1,367 @@
+.offer-header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-phone{
+        height: 130vh;
+    }
+    @include phone-landscape{
+        height: 130vh;
+    }
+    @include tablet{
+        height: 70vh;
+    }
+    @include desktop{
+        height: 80vh;
+    }
+    @include desktop-1440{
+        height: 80vh;
+    }
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+          
+        }
+        
+    }
+}
+.offer-header__picture{
+    width: 100%;
+    height: 40%;
+    background: url('../../public/pictures/air-conditioner-2106343_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position-y: 20%;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $lightblue;
+        opacity: .2;
+        left: 0;
+        top: 0;
+     }
+}
+.offer-header__headline{
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    @include tablet{
+        height: 20%;
+    }
+}
+.offer-header__text{
+    p{
+        line-height: 1.8rem;
+        text-align: center;
+        @include tablet{
+            width: 70%;
+            margin: 0 auto;
+        }
+        @include desktop{
+            text-align: left;
+        }
+        @include desktop-1440{
+            width: 70%;
+            margin: 0 auto;
+
+        }
+    }
+}
+
+////instalation section //////
+.installation{
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-phone{
+        height: 200vh;
+    }
+    @include phone-landscape{
+        height: 130vh;
+    }
+    @include tablet{
+        height: 100vh;
+    }
+    @include desktop{
+        height: 150vh;
+    }
+    @include desktop-1440{
+        height: 100vh;
+    }
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+          
+        }
+        
+    }
+}
+
+.installation__headline{
+    text-align: center;
+    height: 6rem;
+
+
+}
+.installation__list{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    h3{
+        height: 10%;
+        @include desktop{
+            width: 70%;
+            margin: 0 auto;
+        }
+       
+    }
+    ul{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 2rem;
+    @include desktop{
+        padding-top: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
+        li{
+            position: relative;
+            padding-left: 2.5rem;
+        }
+
+    }
+
+
+}
+.installation__service{
+    padding-top: 5rem;
+    @include desktop{
+        padding-top: 0;
+    }
+    height: 60%;
+    p{
+        line-height: 2rem;
+        text-align: center;
+        @include desktop{
+            text-align: left;
+        }
+        @include desktop-1440{
+            width: 70%;
+            margin: 0 auto;
+            
+        }
+    }
+    h3{
+        height: 10%;
+        padding-top: 2rem;
+        @include desktop{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    ul{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 2rem;
+        @include desktop{
+            height: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-top: 2rem;
+            width: 70%;
+            margin: 0 auto;
+        }
+      
+        li{
+            position: relative;
+           padding-left: 4rem;
+        }
+    }
+}
+.icon-another-page{
+    right: 0;
+    height:4rem !important;
+    width: 4rem !important;
+    position: absolute;
+    left: -2%;
+
+}
+
+///////recommended//////////////////
+.recommended{
+    height: 470vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-phone{
+        height: 600vh;
+    }
+    @include phone-landscape{
+        height: 800vh;
+    }
+    @include tablet{
+        height: 400vh;
+    }
+    @include desktop{
+        height: 300vh;
+    }
+    @include desktop-1440{
+        height: 200vh;
+    }
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+          
+        }
+        
+    }
+}
+.recommended__headline{
+    height: 15rem;
+    text-align: center;
+    p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    @include desktop{
+        height: 6rem;
+    text-align: center;
+    }
+}
+.recommended__items{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.recommended__box{
+   width: 100%;
+   height: 40rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   @include desktop{
+    width: 47%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   .recommended__picture{
+       height: 40%;
+      
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: 100%;
+   }
+   .recommended__text{
+       height: 58%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       h3{
+           height: 30%;
+           position: relative;
+        
+
+           &::after{
+               content: '';
+               position: absolute;
+               width: 100%;
+               bottom: 25%;
+               left: 50%;
+               transform: translate(-50%,0);
+               height: .2rem;
+               background: $lightblue;
+           }
+       }
+       p{
+           text-align: justify;
+           width: 80%;
+           margin: 0 auto;
+           height: 70%;
+           @include desktop{
+            text-align: justify;
+            width: 80%;
+            margin: 0 auto;
+            height: 70%;
+           }
+          
+       }
+   }
+
+}
+.no1{
+    background: url('/pictures/gree-bora.jpg');
+
+    background-position-y: 90% !important;
+    @include tablet{
+        background-position-y: 50% !important;
+    }
+    @include desktop{
+        background-position-y: 50% !important;
+    }
+}
+.no2{
+    background: url('/pictures/rotenso-ukura.jpg');
+}
+.no3{
+    background: url('/pictures/servra-komfort.jpg');
+}
+.no4{
+  
+    background: url('/pictures/lg-deluxe.jpg');
+}
+.no5{
+    background: url('/pictures/mistubishi-m.jpg');
+}
+.no6{
+    background: url('/pictures/kaisai-fly.jpg');
+}
+.smaller{
+  
+    @include small-phone{
+        height: 50% !important;
+    }
+    @include tablet{
+        height: 100% !important;
+    }
+    @include desktop{
+        height: 100%;
+    }
+}
+.smallest{
+    height: 50% !important;
+    @include small-phone{
+        height: 50% !important;
+    }
+    @include tablet{
+        height: 100% !important;
+    }
+    @include desktop{
+        height: 100% !important;
+    }
+}

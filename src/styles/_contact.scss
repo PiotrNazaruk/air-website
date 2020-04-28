@@ -1,0 +1,159 @@
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    @include phone-landscape{
+        height: 150vh;
+    }
+    @include  tablet{
+        height: 60vh;
+    }
+    @include desktop{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    &__container{
+        height: 80%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        position: relative;
+        @include desktop{
+            height: 95%;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+        }
+        
+        
+    }
+}
+.contact__map{
+    height: 45%;
+    width: 100%;
+    position: relative;
+    @include desktop{
+        height: 80%;
+        width: 100%;
+        position: relative; 
+    }
+    
+    
+    
+}
+.gm-style-mtc{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+   
+}
+.gmnoprint{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+    @include desktop{
+        display: block;
+    }
+}
+.gm-control-active{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+  
+}
+.gm-svpc{
+    display: none;
+}
+.contact__content{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+    background: white;
+    height: 40%;
+    left: 10%;
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        position: absolute;
+        background: white;
+        height: 70%;
+        left: 10%;  
+    }
+    @include desktop-1440{
+        height: 50%;
+    }
+
+    address{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.3rem;
+        width: 95%;
+        margin: 0 auto;
+        height: 100%;
+        justify-content: flex-start;
+        @include desktop{
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            text-align: left;
+            padding-top: 2rem;
+            @include desktop{
+                text-align: center;
+                padding-top: 2rem; 
+            }
+        }
+    }
+}
+.contact__headline{
+height: 10%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+position: relative;
+@include desktop{
+
+}
+
+h2{
+    color: $darkorange;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: .3rem;
+        background: $lightblue;
+        opacity: .2;
+        left: 50% ;
+        bottom: -50%;
+        transform: translate(-50%,0%);
+     }
+    @include desktop-1440{
+        font-size: 2.8rem;
+    }
+}
+}

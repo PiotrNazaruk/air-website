@@ -1,0 +1,144 @@
+.footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(57, 57, 71);
+    overflow: hidden;
+    @include small-phone{
+        height: 22vh;
+    }
+    @include desktop{
+        height: 25vh; 
+    }
+    @include desktop-1440{
+        height: 18vh;
+    }
+    @include phone-landscape{
+        height: 30vh;
+    }
+  
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+      
+        position: relative;
+        @include desktop{
+            width: 60%;
+            
+
+        }
+        
+    }
+}
+.footer__logo{
+  width: 10%;
+  height: 70%;
+  @include desktop{
+      height: 60%;
+      position: absolute;
+      width: 8%;
+      left: 0;
+      top: 10%;
+  }
+  svg{
+      height: 50%;
+      width: 60%;
+      @include desktop{
+          height: 100%;
+         
+      }
+  }
+}
+.footer__links{
+   position: absolute;
+   width: 40%;
+   height: 15%;
+   right: 0;
+   top: 10%;
+   @include small-phone{
+       width: 50%;
+   }
+   ul{
+       display: flex;
+       justify-content: space-between;
+       li{
+           color: whitesmoke;
+           @include desktop{
+               font-size: 1.6rem;
+           }
+       }
+   }
+}
+.footer__icons{
+position: absolute;
+top: 40%;
+right: 0;
+height: 3rem;
+width: 3rem;
+z-index: 150;
+}
+.footer-link{
+    position: relative;
+    &:after{
+
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: .1rem;
+        background: whitesmoke;
+        right: -10%;
+        top: 0;
+        @include small-phone{
+            right: -20%;
+        }
+        @include phone-landscape{
+            right: -30%;
+        }
+        @include desktop{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: .1rem;
+            background: whitesmoke;
+            right: -30%;
+            top: 0;
+        }
+        @include desktop-1440{
+            right: -70%;
+        }
+    }
+}
+
+
+.footer__all-rights{
+    position: absolute;
+    left: 0%;
+    bottom: 50%;
+    width: 30%;
+    bottom: 5%;
+    
+    span{
+        color: white;
+       
+    }
+    
+}
+.footer__about-author{
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+    width: 45%;
+    text-align: right;
+    @include desktop{
+        position: absolute;
+    right: 0;
+    bottom: 2%;
+    }
+    span{
+        color: white;
+        
+       
+    }
+}

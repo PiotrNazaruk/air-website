@@ -1,6 +1,13 @@
-$body-color: slateblue;
+@import 'colors';
+@import 'global';
+@import 'navigation';
+@import 'header';
+@import 'about';
+@import 'contact';
+@import 'icons';
+@import 'offer';
+@import 'details';
+@import 'campanies';
+@import 'offer-page';
+@import 'footer';
 
-body {
-  color: $body-color;
-  font-family: sans-serif;
-}

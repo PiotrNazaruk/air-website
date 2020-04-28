@@ -1,0 +1,71 @@
+.icons{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    overflow: hidden;
+    @include small-phone{
+        height: 100vh;
+    }
+    @include phone-landscape{
+        height: 150vh;
+    }
+    @include desktop{
+        height: 25vh;
+    }
+    &__container{
+        height: 95%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+        @include desktop{
+            justify-content: space-between;
+            align-items: center; 
+            flex-direction: row;
+          
+        }
+        
+    }
+}
+.icon__box{
+    width: 80%;
+    height: 100%;
+    background: $anotherblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include desktop{
+        width: 25%;
+    height: 100%;
+    background: $anotherblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .icon__img{
+        width: 20%;
+        height: 50%;
+    }
+    .icon__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        p{
+            color: white;
+            font-size: 1.3rem;
+            color: #f5f5f5;
+            text-align: center;
+
+        }
+    }
+}
+.icon__box--special{
+    background: $lightblue;
+}

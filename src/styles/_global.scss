@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+html{
+   
+   
+   
+    font-weight: 300;
+    font-size: 10px;
+    color: $shadeno2;
+    letter-spacing: .1rem;
+    font-family: 'Raleway', sans-serif;
+
+  
+
+}
+body{
+  
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    height: 100%;
+    width: 100%;
+ 
+}
+a{
+    color: $dark !important;
+}
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    color: rgba(0, 0, 0, 0.76);
+}
+svg{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+}
+li{
+    list-style-type: none;
+}
+h2{
+
+    letter-spacing: .3rem;
+    font-family: 'Archivo Black', sans-serif;
+    
+   
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+   
+    font-weight: 300;
+    line-height: 1.3!important;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+/*
+map buttons
+*/
+
+
+@mixin phone-landscape {
+    @media(min-width: 550px) and (orientation : landscape) and (max-width : 700px){
+        @content
+    };
+}
+
+@mixin phone-landscape-l {
+    @media(min-width: 700px) and (orientation : landscape) and (max-height : 400px){
+        @content
+    };
+}
+@mixin small-phone{
+    @media(max-width: 320px)  {@content};
+}
+@mixin tablet {
+    @media(min-width: 768px)and (max-width : 1000px) {@content};
+}
+@mixin desktop{
+    @media(min-width: 1024px){
+        @content;
+    }
+}
+@mixin desktop-1440{
+    @media(min-width: 1440px){
+        @content;
+    }
+}
+@mixin desktop-1900{
+    @media(min-width: 1900px){
+        @content;
+    }
+}
+@mixin desktop-2500{
+    @media(min-width: 2500px){
+        @content;
+    }
+}
