@@ -6,7 +6,8 @@ const navigationItems = document.querySelectorAll('.navigation-burger__item');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 const navigationDropDown = document.querySelector('.navigation__dropdown');
 const dropDownList = document.querySelector('.dropdown__list-hide');
-const elementFixedBottom = document.querySelector('.fixed-bottom')
+const elementFixedBottom = document.querySelector('.fixed-bottom');
+
 const translateBurger = ()=>{
     navigation.classList.toggle('fade');
     navigation.classList.remove('hide');
@@ -34,12 +35,11 @@ navigationLinks.forEach((item)=>{
         console.log('kij')
     })
 })
+
 window.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
     if(scrollY > 200){
-        navigationItems.forEach((item)=>{
-            item.classList.add('dark-item');
-        })
+       
         elementFixedBottom.classList.add('visible')
 
     }else{
@@ -107,26 +107,99 @@ $('a[href*="#"]')
 });
 
 
-
-let dd = document.addEventListener()
-
-// api google map function
+ 
+ 
+ 
  
 
-
- 
 
  
  
  
+var $wrapper = $("#wrapper"),
+    $carousel = $("#carousel"),
+    $nav = $("#nav"),
+    $figures = $("figure"),
+    figuresLength = $figures.length;
+
+TweenMax.set("#wrapper",{
+  perspective: 1000
+});
+
+TweenMax.set("#carousel",{
+  //force3D:false,
+  transformStyle:"preserve-3d",
+  z:-288
+});
+
+TweenMax.set("#carousel > figure",{
+  //force3D:false,
+  //z:288
+});
+
+var rY = 0, 
+    tZ = 288;
+
+$figures.each(function(index,element){
+    
+    TweenMax.set(element,{
+      //force3D:false,
+      //parseTransform:true,
+      transform: "rotateY("+rY+"deg)  translateZ(400px)"
+      //rotationY:rY,
+      //z:288
+    });
+  
+    //$(element).css(transform,"rotateY("+rY+"deg) translateZ(288px)");
  
+    rY = rY + 40;
+    //console.log(rY);
+});
+
+$nav.on("click", "#prev", function(){
+    
+    TweenMax.to("#carousel",1,{
+      //parseTransform:true,
+      rotationY:"-=40"
+      //transform: "rotateY("+rY+"deg) translateZ(-288px)"
+    });
+});
+
+$nav.on("click", "#next", function(){
+    TweenMax.to("#carousel",1,{
+      //parseTransform:true,
+      rotationY:"+=40"
+      //transform: "rotateY("+rY+"deg) translateZ(-288px)"
+    });
+});
+
+//TweenMax.to("#carousel",20,{
+//      rotationY:"+=360",
+//      repeat:-1
+//});
+
+var panelSize = 186;
+var  numberOfPanels = figuresLength;
+
+var tz = Math.round( ( panelSize / 2 ) /  Math.tan( Math.PI / numberOfPanels ) );
+
+console.log(tz)
+const plus = document.querySelectorAll('.plus-widg');
+const hiddenText = document.querySelectorAll('.hidden-text');
+
+const  showText =()=>{
+  plus.forEach((item)=>{
+    item.addEventListener('click',(e)=>{
+     let arrHiddenText = Array.from(hiddenText)
+     arrHiddenText.map((text)=>{
+      console.log(text.id,e.target.id)
+      if(text.id == e.target.id){
+        text.classList.toggle('show-text')
+      }
+     })
+    })
+  })
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
+   
+}
+showText()

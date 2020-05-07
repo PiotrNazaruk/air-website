@@ -1,10 +1,10 @@
 .offer-header{
-    height: 100vh;
+    height: 170vh;
     display: flex;
     justify-content: center;
     align-items: center;
     @include small-phone{
-        height: 130vh;
+        height: 200vh;
     }
     @include phone-landscape{
         height: 130vh;
@@ -13,10 +13,10 @@
         height: 70vh;
     }
     @include desktop{
-        height: 80vh;
+        height: 110vh;
     }
     @include desktop-1440{
-        height: 80vh;
+        height: 110vh;
     }
     &__container{
         height: 95%;
@@ -31,43 +31,109 @@
 }
 .offer-header__picture{
     width: 100%;
-    height: 40%;
+    height: 20%;
     background: url('../../public/pictures/air-conditioner-2106343_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
     background-position-y: 20%;
     position: relative;
+    @include desktop{
+        height: 30%;
+    }
     &::after{
         content: '';
         position: absolute;
         width: 100%;
         height: 100%;
-        background: $lightblue;
-        opacity: .2;
+        background: $dark-blue;
+        opacity: .6;
         left: 0;
         top: 0;
      }
 }
+.offer-header__content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include desktop{
+        height: 70%;
+    }
+}
 .offer-header__headline{
-    height: 30%;
+    padding-top: 3rem;
+   
     justify-content: center;
     align-items: center;
     display: flex;
-    @include tablet{
-        height: 20%;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    height: 40%;
+    @include desktop{
+        width: 50%;
+        padding-bottom: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        
+    }
+   
+}
+.offer-header__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: .5rem solid $dark-blue;
+    height: 30%;
+    @include desktop{
+        width: 30%;
+        height: 80%;
+    }
+    p{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.offer-header__box--blue{
+    background: $dark-blue;
+    p{
+        color: whitesmoke;
+        
     }
 }
 .offer-header__text{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    
+    @include desktop{
+        flex-direction: row;
+        padding-top: 5rem;
+    }
+   
     p{
         line-height: 1.8rem;
         text-align: center;
+        font-size: 1.5rem;
+        width: 90%;
         @include tablet{
             width: 70%;
             margin: 0 auto;
         }
         @include desktop{
-            text-align: left;
+            text-align: center;
+            font-size: 1.5rem;
         }
         @include desktop-1440{
             width: 70%;
@@ -79,12 +145,12 @@
 
 ////instalation section //////
 .installation{
-    height: 140vh;
+    height: 380vh;
     display: flex;
     justify-content: center;
     align-items: center;
     @include small-phone{
-        height: 200vh;
+        height: 440vh;
     }
     @include phone-landscape{
         height: 130vh;
@@ -93,10 +159,10 @@
         height: 100vh;
     }
     @include desktop{
-        height: 150vh;
+        height: 130vh;
     }
     @include desktop-1440{
-        height: 100vh;
+        height: 130vh;
     }
     &__container{
         height: 95%;
@@ -113,8 +179,21 @@
 .installation__headline{
     text-align: center;
     height: 6rem;
+    h2{
+        margin-top: 2rem;
+        color: $dark-blue;
+    }
 
 
+}
+.installation__headline-service{
+    margin-top: 4rem;
+    p{
+        margin-top: 3rem;
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 .installation__list{
     height: 30%;
@@ -133,29 +212,54 @@
     ul{
         height: 80%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         padding-top: 2rem;
+        flex-wrap: wrap;
     @include desktop{
         padding-top: 0;
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
+        flex-direction: row;
     }
         li{
             position: relative;
-            padding-left: 2.5rem;
+            width: 50%;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-bottom: .1rem solid $dark-blue;
+            @include desktop{
+                width: 18%;
+            }
+            img{
+                height: 5rem;
+                width: 5rem;
+                margin-bottom: 3rem;
+            }
         }
 
     }
 
 
 }
+.instalation__list-content{
+    height: 100%;
+    width: 100%;
+    ul{
+        height: 100%;
+    }
+}
 .installation__service{
     padding-top: 5rem;
+   
     @include desktop{
         padding-top: 0;
     }
-    height: 60%;
+    height: 70%;
     p{
         line-height: 2rem;
         text-align: center;
@@ -163,8 +267,7 @@
             text-align: left;
         }
         @include desktop-1440{
-            width: 70%;
-            margin: 0 auto;
+        
             
         }
     }
@@ -177,24 +280,25 @@
         }
     }
     ul{
-        height: 40%;
+       
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         padding-top: 2rem;
         @include desktop{
-            height: 55%;
+            height: 40%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-around;
             padding-top: 2rem;
-            width: 70%;
+            width: 100%;
             margin: 0 auto;
         }
       
         li{
             position: relative;
-           padding-left: 4rem;
+            width: 17%;
+          
         }
     }
 }
@@ -206,10 +310,139 @@
     left: -2%;
 
 }
+.installation__headline-service{
+    margin-top: 4rem;
+    p{
+        margin-top: 5rem;
+        width: 80%;
+        margin: 2.5rem auto;
+        text-align: center;
+        font-size: 1.5rem;
+        @include desktop{
+            width: 40%;
+        }
 
+    }
+}
+.instalation__service-container{
+    height: 90%;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include desktop{
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+   
+}
+.instalation__service-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @include desktop{
+        width: 65%;
+    }
+    p{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        position: relative;
+        display: block;
+       
+        &::after{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: .5rem;
+            background: $dark-blue;
+            left: 0;
+            top: 0;
+        }
+      
+    }
+    h3{
+        text-align: center;
+        color: $dark-blue;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        align-items: center;
+        @include desktop{
+            flex-wrap: nowrap;
+        }
+        li{
+            font-size: 1.5rem;
+            text-align: center;
+            padding-top: 0;
+            border-bottom: .1rem solid $dark-blue;
+            font-weight: bold;
+            background: $dark-blue;
+            color: whitesmoke;
+            margin: .5rem;
+            width: 43%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            @include desktop{
+               
+                width: 19%;
+                height: 70%;
+            }
+        
+        }
+    }
+}
+.instalation__service-picture{
+    width: 100%;
+    background: url('../../public/pictures/zdj-klima.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 50%;
+    position: relative;
+    margin-top: 5rem;
+   
+    @include desktop{
+        width: 30%;
+        margin-left: 10rem;
+        height: 100%;
+        padding-right: 4rem;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $dark-blue;
+        opacity: .6;
+       
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 10%;
+        background: $dark-blue;
+        right: 0;
+        @include desktop{
+            right: 0;
+            width: 20%;
+        }
+    }
+}
 ///////recommended//////////////////
 .recommended{
-    height: 470vh;
+    height: 380vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,10 +456,11 @@
         height: 400vh;
     }
     @include desktop{
-        height: 300vh;
+        height: 180vh;
+        margin-top: 4rem;
     }
     @include desktop-1440{
-        height: 200vh;
+       
     }
     &__container{
         height: 95%;
@@ -239,70 +473,91 @@
         
     }
 }
+.li-center{
+    align-self: center;
+}
 .recommended__headline{
     height: 15rem;
     text-align: center;
     p{
         width: 70%;
         margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    h2{
+        color: $dark-blue;
     }
     @include desktop{
         height: 6rem;
     text-align: center;
+    margin-top: 5rem;
     }
 }
 .recommended__items{
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    @include desktop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+}
+.fit{
+    height: fit-content;
 }
 .recommended__box{
    width: 100%;
-   height: 40rem;
+    height: 20%;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+    @include phone-landscape{
+        width: 30%;
+    }
    @include desktop{
-    width: 47%;
-    height: 40rem;
+    width: 30%;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
    }
    .recommended__picture{
        height: 40%;
-      
+        padding: 3rem;
        background-size: cover;
        background-repeat: no-repeat;
        background-position: 100%;
    }
    .recommended__text{
-       height: 58%;
+       
        display: flex;
        justify-content: space-between;
        align-items: center;
        flex-direction: column;
+       position: relative;
+       height: 60%;
        h3{
            height: 30%;
            position: relative;
         
 
-           &::after{
-               content: '';
-               position: absolute;
-               width: 100%;
-               bottom: 25%;
-               left: 50%;
-               transform: translate(-50%,0);
-               height: .2rem;
-               background: $lightblue;
-           }
+      
        }
        p{
-           text-align: justify;
-           width: 80%;
+         
+           width: 90%;
            margin: 0 auto;
-           height: 70%;
+           height: auto;
+           font-size: 1.2rem;
+           text-align: center;
            @include desktop{
             text-align: justify;
             width: 80%;
@@ -314,29 +569,71 @@
    }
 
 }
+.hidden-text{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.show-text{
+    display: block;
+    visibility: visible;
+  opacity: 1;
+   
+}
+.plus-widg{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    bottom: 4%;
+    right: 2%;
+}
 .no1{
-    background: url('/pictures/gree-bora.jpg');
-
-    background-position-y: 90% !important;
-    @include tablet{
-        background-position-y: 50% !important;
+    background: url('../../public/pictures/tosh-s.png');
+    position: relative;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    @include small-phone{
+        background-position-x: 80%;
+      
     }
-    @include desktop{
-        background-position-y: 50% !important;
-    }
+   
 }
 .no2{
-    background: url('/pictures/rotenso-ukura.jpg');
+    
+    position: relative;
+    &:after{
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70%;
+        background: url('../../public/pictures/aux.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: '';
+    }
 }
 .no3{
-    background: url('/pictures/servra-komfort.jpg');
+    background: url('../../public/pictures/servra-komfort.jpg');
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .no4{
-  
-    background: url('/pictures/lg-deluxe.jpg');
+    background: url('../../public/pictures/lg-deluxe.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
 }
 .no5{
-    background: url('/pictures/mistubishi-m.jpg');
+
+    position: relative;
+    background: url('../../public/pictures/mistubishi-m.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .no6{
     background: url('/pictures/kaisai-fly.jpg');

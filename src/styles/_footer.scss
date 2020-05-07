@@ -3,16 +3,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(57, 57, 71);
+    background: white;
     overflow: hidden;
+    width: 100%;
+    border-top: .1rem solid $dark-blue;
     @include small-phone{
         height: 22vh;
     }
     @include desktop{
         height: 25vh; 
+        margin-top: 4rem;
     }
     @include desktop-1440{
-        height: 18vh;
+        height: 25vh;
     }
     @include phone-landscape{
         height: 30vh;
@@ -25,7 +28,8 @@
       
         position: relative;
         @include desktop{
-            width: 60%;
+            width: 95%;
+
             
 
         }
@@ -35,12 +39,14 @@
 .footer__logo{
   width: 10%;
   height: 70%;
+  padding-bottom: 1rem;
   @include desktop{
       height: 60%;
       position: absolute;
       width: 8%;
       left: 0;
-      top: 10%;
+      top: 5%;
+      padding-bottom: 0;
   }
   svg{
       height: 50%;
@@ -51,26 +57,7 @@
       }
   }
 }
-.footer__links{
-   position: absolute;
-   width: 40%;
-   height: 15%;
-   right: 0;
-   top: 10%;
-   @include small-phone{
-       width: 50%;
-   }
-   ul{
-       display: flex;
-       justify-content: space-between;
-       li{
-           color: whitesmoke;
-           @include desktop{
-               font-size: 1.6rem;
-           }
-       }
-   }
-}
+
 .footer__icons{
 position: absolute;
 top: 40%;
@@ -114,13 +101,23 @@ z-index: 150;
 
 .footer__all-rights{
     position: absolute;
-    left: 0%;
-    bottom: 50%;
-    width: 30%;
+    right: 0%;
+    top: 10%;
+    width: 70%;
     bottom: 5%;
-    
+    text-align: right;
+    @include small-phone{
+        width: 90%;
+    }
+    @include desktop{
+        width: 50%; 
+    }
     span{
-        color: white;
+        color: rgb(32, 32, 32);
+        font-size: 1.5rem;
+        @include desktop{
+            font-size: 1.5rem;  
+        }
        
     }
     
@@ -128,17 +125,27 @@ z-index: 150;
 .footer__about-author{
     position: absolute;
     right: 0;
-    bottom: 2%;
-    width: 45%;
+    top: 40%;
+    width: 60%;
+    font-size: .5rem;
     text-align: right;
+    @include small-phone{
+        font-size: .8rem;
+        top: 30%;
+        width: 65%;
+    }
     @include desktop{
         position: absolute;
     right: 0;
     bottom: 2%;
     }
     span{
-        color: white;
-        
+        color: rgb(32, 32, 32);
+        font-size: .7rem;
+        text-align: right;
+        @include desktop{
+            font-size: 1.5rem; 
+        }
        
     }
 }

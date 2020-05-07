@@ -3,16 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: whitesmoke;
     overflow: hidden;
     @include small-phone{
         height: 100vh;
     }
     @include phone-landscape{
-        height: 150vh;
+        height: 170vh;
     }
     @include desktop{
         height: 25vh;
+        margin-top: 4rem;
     }
     &__container{
         height: 95%;
@@ -32,9 +32,9 @@
     }
 }
 .icon__box{
-    width: 80%;
+    width: 95%;
     height: 100%;
-    background: $anotherblue;
+    background: $dark-blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@
     @include desktop{
         width: 25%;
     height: 100%;
-    background: $anotherblue;
+    background: $dark-blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,5 +67,5 @@
     }
 }
 .icon__box--special{
-    background: $lightblue;
+    background: $darkorange;
 }

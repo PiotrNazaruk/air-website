@@ -34,7 +34,7 @@
       Montaż klimatyzacji | Ostrołęka, Ciechanów, Maków Mazowiecki, Przasnysz,
       Zambrów, Łomża | montaż - szybko i profesjonalnie zobacz i sprawdź !
     </title>
-    <link rel="stylesheet" href="/css/main.css" />
+   
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -48,71 +48,71 @@
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="/pictures/favicon/apple-icon-57x57.png"
+      href="../public/pictures/favicon/apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="/pictures/favicon/apple-icon-60x60.png"
+      href="../public/pictures/favicon/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/pictures/favicon/apple-icon-72x72.png"
+      href="../public/pictures/favicon/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="/pictures/favicon/apple-icon-76x76.pngg"
+      href="../public/pictures/favicon/apple-icon-76x76.pngg"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="/pictures/favicon/apple-icon-114x114.png"
+      href="../public/pictures/favicon/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="/pictures/favicon/apple-icon-120x120.png"
+      href="../public/pictures/favicon/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="/pictures/favicon/apple-icon-144x144.png"
+      href="../public/pictures/favicon/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/pictures/favicon/apple-icon-152x152.png"
+      href="../public/pictures/favicon/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/pictures/favicon/apple-icon-180x180.png"
+      href="../public/pictures/favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/pictures/favicon/android-icon-192x192.png"
+      href="../public/pictures/favicon/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/pictures/favicon/favicon-32x32.png"
+      href="../public/pictures/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="/pictures/favicon/favicon-96x96.png"
+      href="../public/pictures/favicon/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/pictures/favicon/favicon-16x16.png"
+      href="../public/pictures/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/pictures/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -123,6 +123,21 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <div class="fixed-bottom">
+      <div class="fixed-bottom__container">
+        <a href="tel:+48502130907">
+          <div class="fixed-bottom__button">
+            <span>tel: 502-130-907</span>
+          </div>
+        </a>
+      <a href="https://www.facebook.com/KlimatyzacjaDoTwojegoDomu/">
+          <div class="fixed-bottom__facebook">
+            <span>facebook</span>
+            <img src="../public/pictures/like.svg" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="navigation-burger">
         <div
@@ -139,12 +154,13 @@
         <div class="navigation__container">
           <div class="navigation__top-elements">
             <div class="navigation__logo">
-              <a href="index.html"> <img src="/pictures/logo-c.svg" alt=""/></a>
+              <a href="index.html"> <img src="../public/pictures/logo2.svg" alt=""/></a>
             </div>
+
             <div class="navigation__info">
               <div class="navigation__telephone">
                 <div class="navigation__telephone-icon">
-                  <img src="/pictures/call-us.svg" alt="" />
+                  <img src="../public/pictures/call-us.svg" alt="" />
                 </div>
                 <div class="navigation__telephone-info">
                   <h3><b>Zadzwoń Do Nas</b></h3>
@@ -153,7 +169,7 @@
               </div>
               <div class="navigation__hours">
                 <div class="navigation__hours-icon">
-                  <img src="/pictures/hours.svg" alt="" />
+                  <img src="../public/pictures/hours.svg" alt="" />
                 </div>
                 <div class="navigation__hours-info">
                   <h3><b>Poniedziałek - Piątek</b></h3>
@@ -162,124 +178,142 @@
               </div>
             </div>
           </div>
-          <ul class="navigation__list">
-            <a class="navigation__link navigation-animation" href="index.html"
-              ><li>HOME</li></a
-            >
-            <a class="navigation__link navigation-animation" href="index.html"
-              ><li>O NAS</li></a
-            >
-            <a class="navigation__link navigation-animation" href="oferta.html">
-              <li>OFERTA</li></a
-            >
-            <a class="navigation__link navigation-animation" href="index.html">
-              <li>KONTAKT</li></a
-            >
-          </ul>
-        </div>
+          <div class="navigation-list__container">
+            <ul class="navigation__list">
+              <a class="navigation__link navigation-animation" href="index.html"
+                ><li>HOME</li></a
+              >
+              <a class="navigation__link navigation-animation" href="index.html"
+                ><li>O NAS</li></a
+              >
+              <a class="navigation__link navigation-animation" href="./oferta.html">
+                <li>OFERTA</li></a
+              >
+              <a class="navigation__link navigation-animation" href="index.html">
+                <li>KONTAKT</li></a
+              >
+            </ul>
+          </div>
+          </div>
+        
       </nav>
       <header class="offer-header">
         <div class="offer-header__container">
           <div class="offer-header__picture"></div>
-          <div class="offer-header__headline"><h1>DLACZEGO MY?</h1></div>
-          <div class="offer-header__text">
-            <p>
-              Dostarczamy i instalujemy najlepsze urządzenia tylko wiodących
-              producentów. Pracujemy na terenie <b>Ostrołęki</b> , Ciechanowa,
-              Przasnysza, Makowa Mazowieckiego, Zambrowa, Łomży oraz pobliskich miejscowościach
-            </p>
-            <p>
-              <b>Montując klimatyzatory</b> posługujemy się tyko i wyłącznie
-              materiałami z odpowiednimi certyfikatami oraz atestami.
-            </p>
-            <p>
+          <div class="offer-header__content">
+            <div class="offer-header__headline"><h1>DLACZEGO MY?</h1>
+              
+              <p>
+                Dostarczamy i instalujemy najlepsze urządzenia tylko wiodących
+                producentów. Pracujemy na terenie <b>Ostrołęki</b> , Ciechanowa,
+                Przasnysza, Makowa Mazowieckiego, Zambrowa, Łomży oraz pobliskich miejscowościach
+              </p>
+            </div>
+            <div class="offer-header__text">
+             <div class="offer-header__box">
+              <p>
+                <b>Montując klimatyzatory</b> posługujemy się tyko i wyłącznie
+                materiałami z odpowiednimi certyfikatami oraz atestami.
+              </p>
+             </div>
+             <div class="offer-header__box offer-header__box--blue">  <p>
               Każdy <b>montaż klimatyzacji</b> jest inny dlatego też do każdego
               zlecenia podchodzimy w sposób indywidualny. Dzięki czemu
               <b>montaż</b> przebiega szybko, sprawnie a przede wszystkim
               solidnie
-            </p>
-            <p>
-              Nasze usługi również obejmują regularne przeglądy klimatyzacji.
-              Dzięki nim wcześniej możemy zauważyć najmniejsze zmiany w
-              funkcjonowaniu całego systemu.
-            </p>
+            </p></div>
+             <div class="offer-header__box">
+                
+              <p>
+                Usługi <b>Klimat-Systemy</b>  obejmują regularne przeglądy klimatyzacji.
+                Dzięki nim wcześniej możemy zauważyć najmniejsze zmiany w
+                funkcjonowaniu całego systemu.
+              </p>
+             </div>
+           
+            </div>
           </div>
+         
         </div>
       </header>
       <section class="installation">
         <div class="installation__container">
-          <div class="installation__headline"><h2>MONTAŻ</h2></div>
+          <div class="installation__headline"><h2>MONTAŻ</h2> <h3>Decydując się na nasze usługi zapewniamy:</h3></div>
           <div class="installation__list">
-            <h3>Decydując się na nasze usługi zapewniamy:</h3>
+            <div class="instalation__list-content">
+             
             <ul>
               <li>
-                <img class="icon-another-page" src="/pictures/ok.svg" alt="" />
+                <img src="../public/pictures/wsparcie.svg" alt="wsparcie">
                 Wsparcie w wyborze urządzenia
               </li>
               <li>
-                <img class="icon-another-page" src="/pictures/ok.svg" alt="" />
+                <img src="../public/pictures/no-pay.svg" alt="bezpłatna wycena">
                 Bezpłatną wycenę
               </li>
               <li>
-                <img class="icon-another-page " src="/pictures/ok.svg" alt="" />
+                <img src="../public/pictures/miejsc.svg" alt="pomoc w doborze sprzętu">
                 Pomoc w doborze odpowiedniego miejsca instalacji
               </li>
               <li>
-                <img class="icon-another-page " src="/pictures/ok.svg" alt="" />
+                <img src="../public/pictures/wydajn.svg" alt="oszacowanie wydajności">
                 Oszacowanie wymaganej wydajności urządzenia
               </li>
               <li>
-                <img class="icon-another-page " src="/pictures/ok.svg" alt="" />
+                <img src="../public/pictures/przewody.svg" alt="analiza rozkładu przewodów">
                 Analizę możliwości rozkładu przewodów freonowych
               </li>
             </ul>
+            </div>
+            <div class="instalation__list-picture">
+
+            </div>
+            
           </div>
           <div class="installation__service">
-            <div class="installation__headline"><h2>PRZEGLĄD</h2></div>
-            <p>
+            <div class="installation__headline installation__headline-service"><h2>PRZEGLĄD</h2> <p>
               Dobrze funkcjonujący klimatyzator może działać nawet do 20lat.
-              Kluczem są regularne przeglądy techniczne. Należy zwrócić uwagę że
-              przegląd zawsze będzie kosztować mniej niż naprawa bądź wymiana
-              urządzenia
-            </p>
-            <p>
-              Podczas kontroli sprawdzany zostaje każdy element w systemie
-              klimatyzacji oraz gruntowne czyszczenie sprzętu. Dodatkowym plusem
-              jest to że utrzymując stale na wysokim poziomie stan techniczny
-              klimatyzatora, nie pobiera on dodatkowej energii, dzięki czemu nie
-              zwiększa on kosztów eksploatacyjnych
-            </p>
-            <h3>W skład prac konserwatorskich wchodzi:</h3>
-            <ul>
-              <li>
-                <img
-                  class="icon-another-page  smallest"
-                  src="/pictures/ok.svg"
-                  alt=""
-                />
-                Analiza stanu poszczególnych elementów systemu
-              </li>
-              <li>
-                <img
-                  class="icon-another-page"
-                  src="/pictures/ok.svg"
-                  alt=""
-                />Odgrzybianie
-              </li>
-              <li>
-                <img class="icon-another-page" src="/pictures/ok.svg" alt="" />
-                Sprawdzanie szczelności
-              </li>
-              <li>
-                <img class="icon-another-page" src="/pictures/ok.svg" alt="" />
-                Wymiana filtrów
-              </li>
-              <li>
-                <img class="icon-another-page" src="/pictures/ok.svg" alt="" />
-                Czyszczenie
-              </li>
-            </ul>
-          </div>
+            
+            </p></div>
+            <div class="instalation__service-container">
+              <div class="instalation__service-content">
+                <p>
+                  Podczas kontroli sprawdzany zostaje każdy element w systemie
+                  klimatyzacji oraz gruntowne czyszczenie sprzętu. Dodatkowym plusem
+                  jest to że utrzymując stale na wysokim poziomie stan techniczny
+                  klimatyzatora, nie pobiera on dodatkowej energii, dzięki czemu nie
+                  zwiększa on kosztów eksploatacyjnych
+                </p>
+                <p>Kluczem są regularne przeglądy techniczne. Należy zwrócić uwagę że
+                  przegląd zawsze będzie kosztować mniej niż naprawa bądź wymiana
+                  urządzenia</p>
+                <h3>W skład prac konserwatorskich wchodzi:</h3>
+                <ul>
+                  <li>
+                  
+                    Analiza stanu poszczególnych elementów systemu
+                  </li>
+                  <li>
+                  Odgrzybianie
+                  </li>
+                  <li>
+                  
+                    Sprawdzanie szczelności
+                  </li>
+                  <li>
+                   
+                    Wymiana filtrów
+                  </li>
+                  <li class="li-center">
+                   
+                    Czyszczenie
+                  </li>
+                </ul>
+              </div>
+              <div class="instalation__service-picture"></div>
+            </div>
+            </div>
+           
         </div>
       </section>
       <section class="recommended">
@@ -295,38 +329,32 @@
             <div class="recommended__box">
               <div class="recommended__picture no1"></div>
               <div class="recommended__text">
-                <h3>Gree Bora</h3>
+                <h3>Toshiba seyia</h3>
                 <p>
-                  Klimatyzator Gree Bora to stylowy i ekonomiczny model.
-                  Wyjątkowy design sprawia, że komponuje się on praktycznie w
-                  każdym wnętrzu. Dzięki funkcjom takim jak odczyt temperatury z
-                  pilota, timer 24h oraz sterownie przez wifi, jego obsługa jest
-                  wyjątkowo prosta i przyjemna. Funkcjami podnoszącymi komfort
-                  użytkownika jest wbudowany jonizator plazmowy, tryb snu oraz
-                  funkcja gorącego startu. Urządzenie ponadto cechuje się
-                  skuteczną i niezawodną pracą, a dzięki trybowi turbo umożliwia
-                  błyskawiczne schłodzenie pomieszczenia.
+                  Jednostki wewnętrzne Seiya charakteryzują się niskim profilem, dyskretnymi zaokrągleniami, błyszczącą powierzchnią i eleganckim podświetleniem LED.
+                 
                 </p>
+                <p id="2" class="hidden-text">
+                  Urządzenia SEIYA mają funkcję „cichej pracy”, która obniża poziom hałasu jednostki zewnętrznej o połowę, a także redukującej dźwięk z jednostki wewnętrznej do 19dB(A), co umożliwia spokojny sen, jednocześnie ciesząc się komfortowym klimatem w pomieszczeniu.
+                </p>
+                <div class="plus-widg">
+                  <img id="2"  src="../public/pictures/plus.svg" alt="">
+                </div>
               </div>
             </div>
             <div class="recommended__box">
               <div class="recommended__picture no2"></div>
               <div class="recommended__text">
-                <h3>Rotenso Ukura</h3>
+                <h3>Aux j-smart</h3>
                 <p>
-                  Klasyczna biała bryła klimatyzatora UKURA została złamana
-                  delikatnymi srebrnymi wykończeniami panelu oraz nowoczesnymi
-                  zaokrągleniami. Pomimo niewielkich rozmiarów klimatyzator
-                  charakteryzuje się dużą wydajnością. Dzięki funkcji eMOTO
-                  turbo bardzo szybko osiąga zadaną temperaturę nawet przy
-                  niskiej temperaturze zewnętrznej (-15°C). Wiele funkcji
-                  OPTIMA, w które została wyposażona jednostka – programator
-                  czasowy, pamięć ustawiania żaluzji, pamięć autorestartu –
-                  zupełnie automatyzuje jej pracę. Specjalny tryb pracy iAIR
-                  automatycznie oczyszcza i osusza wnętrze klimatyzatora,
-                  zapobiegając powstaniu nieprzyjemnych zapachów i mnożeniu się
-                  bakterii.
+                  Seria J-Smart to przede wszystkim innowacyjne rozwiązania konstrukcyjne i minimalistyczne, unikatowe wzornictwo.
                 </p>
+                <p id="1" class="hidden-text">
+                  Jednostki posiadają między innymi wzmocnioną, odporną na uszkodzenia mechaniczne obudowę ze zdejmowaną dolną pokrywą, opatentowane pionowe żaluzje powietrzne w kształcie rybiej płetwy i dwuwarstwową poziomą żaluzję powietrzną, doskonale dostosowującą kierunek nawiewu do trybu pracy urządzenia.
+                </p>
+                <div  class="plus-widg">
+                  <img id="1" src="../public/pictures/plus.svg" alt="">
+                </div>
               </div>
             </div>
             <div class="recommended__box">
@@ -337,13 +365,15 @@
                   Seria Comfort oferuje szeroką funkcjonalność i innowacyjne
                   rozwiązania technologiczne, dzięki którym może zapewnić
                   optymalne warunki w pomieszczeniu i niskie koszty
-                  eksploatacyjne. Całość zamknięta w nowoczesnej, eleganckiej
-                  obudowie. To połączenie prawdziwego komfortu z atrakcyjnym
-                  wyglądem. Maksymalny komfort korzystania z klimatyzacji
+                  eksploatacyjne. 
+                </p>
+                <p id="3" class="hidden-text">Maksymalny komfort korzystania z klimatyzacji
                   gwarantuje szeroki wybór funkcji, takich jak tryb turbo, tryb
                   snu, funkcja Anti-Cold, programator czasowy, czy inteligentne
-                  podświetlenie.
-                </p>
+                  podświetlenie.</p>
+                <div  class="plus-widg">
+                  <img id="3" src="../public/pictures/plus.svg" alt="">
+                </div>
               </div>
             </div>
             <div class="recommended__box">
@@ -353,16 +383,17 @@
                 <p>
                   Ponadczasowy design nowej serii DELUXE zachwyca elegancją i
                   klasą jako jednostka wewnętrzna, która stanowi element
-                  wystroju wnętrza. Rozwiązanie to wprowadza niepowtarzalny
-                  efekt w pomieszczeniu w, którym zainstalowany jest właśnie ten
-                  klimatyzator. W nowej dużo atrakcyjniejszej wizualnie odsłonie
+                  wystroju wnętrza. 
+                </p>
+                <p class="hidden-text" id="4">
+                  W nowej dużo atrakcyjniejszej wizualnie odsłonie
                   z 2017 roku klimatyzatory wyposażone zostały w moduł Wi-Fi.
-                  Klimatyzacja ścienna LG Deluxe to najnowszy model z oferty LG
-                  z 2017 roku. Dzięki Wi-Fi można kontrolować pracę urządzenia
-                  przy pomocy smartfona z dowolnego miejsca i w dowolnym czasie.
                   Klimatyzatory z serii Artcool charakteryzują się bardzo niską
                   emisją hałasu. W trybie pracy snu to zaledwie 19 dB.
                 </p>
+                <div  class="plus-widg">
+                  <img id="4" src="../public/pictures/plus.svg" alt="">
+                </div>
               </div>
             </div>
             <div class="recommended__box">
@@ -371,60 +402,38 @@
                 <h3>Mitsubishi M</h3>
                 <p>
                   Urządzenia z tej serii przeznaczone są do energooszczędnego
-                  chłodzenia lub ogrzewania małych i średnich pomieszczeń. Są
-                  niezwykle nowoczesne, dzięki czemu doskonale sprawdzają się
-                  jako rozwiązania typu Single lub Multi Split w mieszkaniach,
-                  małych biurach lub gabinetach. Zapewniają komfortowe warunki w
-                  pomieszczeniach, w których są montowane. Klimatyztory Serii M
+                  chłodzenia lub ogrzewania małych i średnich pomieszczeń. 
+                </p>
+                <p class="hidden-text" id="5">
+                  Klimatyztory Serii M
                   idealnie wkomponowują się w wystrój wnętrz, a to za sprawą
                   eleganckiego wyglądu oraz niewielkim wymiarom. Dodatkowo cicha
                   praca sprawia, że ich obecność jest niemal niezauważalna.
                 </p>
+                <div  class="plus-widg">
+                  <img id="5" src="../public/pictures/plus.svg" alt="">
+                </div>
               </div>
             </div>
-            <div class="recommended__box">
-              <div class="recommended__picture no6"></div>
-              <div class="recommended__text">
-                <h3>Kaisai Fly</h3>
-                <p>
-                  Nowoczesne urządzenie klimatyzacyjne, czyli KAISAI FLAY
-                  zostało wyposażone w czynnik chłodniczy R32. Elegancki panel
-                  pozwala na skuteczne zarządzanie pracą sprzętu, a tym samym
-                  całe urządzenie pasuje do wnętrza, w którym zostaje
-                  umieszczone. Klimatyzator jest w stanie ogrzać wnętrze, nawet
-                  jeżeli na zewnątrz jest -25 stopni Celsjusza
-                </p>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__logo">
-            <img src="/pictures/logo-c.svg" alt="" />
+            <img src="../public/pictures/logo-c.svg" alt="" />
           </div>
-          <div class="footer__links">
-            <ul>
-              <a href="index.html"><li class="footer-link">O nas</li></a>
-              <a href="oferta.html"><li class="footer-link">Oferta</li></a>
-              <a href="index.html"> <li>Kontakt</li></a>
-            </ul>
-          </div>
-          <div class="footer__icons">
-            <a href="https://www.facebook.com/"
-              ><div class="footer__icon footer__icon--facebook">
-                <img src="/pictures/fb.svg" alt="" /></div
-            ></a>
-          </div>
+      
           <div class="footer__all-rights">
-            <span>Klimat - all rights reserved</span>
+            <span><b>Klimat</b> - all rights reserved ©</span>
           </div>
           <div class="footer__about-author">
-            <span>designed and created by - Piotr Nazaruk</span>
+            <span>designed and created by - Piotr Nazaruk - <b>513-650-513</b> </span>
           </div>
         </div>
       </footer>
+
     </div>
 
     <link
@@ -439,6 +448,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
     <script src="/js/script.js" async></script>
+    <script async src="./scripts/script2.js" ></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 

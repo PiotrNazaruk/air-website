@@ -7,6 +7,7 @@
     background: #003354;
     justify-content: center;
     align-items: center;
+    bottom: 0;
     &__container{
         width: 80%;
         margin: 0 auto;
@@ -114,6 +115,8 @@
         
         font-size: 1.5rem;
         padding-bottom: 1rem;
+        color: $dark-blue;
+        font-weight: bold;
 
     }
     h1{
@@ -191,9 +194,7 @@
       bottom: -160%;
   }
   @include desktop{
-    position: absolute;
-    right: 0;
-    bottom: -50%;
+    
   }
   @include desktop-1440{
    
@@ -202,10 +203,10 @@
  .header__picture{
      width: 40%;
      height: 100%;
-     background-image: url('/pictures/wall-1801952_1280.jpg');
+     background-image: url('../../public/pictures/wall-1801952_1280.jpg');
      background-size: cover;
     background-repeat: no-repeat;
-     background-position-x: center;
+     background-position-x:center;
     
 
      position: relative;
